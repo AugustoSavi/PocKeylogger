@@ -4,20 +4,13 @@
 ## Como Usar
 Renomeio o arquivo .env_copy para .env  e adicione as informações faltantes(vc tbm pode alterar o server smtp)
 
-depois de iniciar a aplicação pode fechar a tela que vai se abrir que vai ficar rodando um system tray icon que vc 
-pode fechar a aplicação
-
-Ele vai abrir assim:
-
-![image](https://user-images.githubusercontent.com/32443720/170908453-67d696ca-fb93-4b15-b5f3-288c071ef177.png)
-
-Apenas feche para ele acionar o system tray icon 
+A aplicação vai ficar rodando um system tray icon
 
 ![image](https://user-images.githubusercontent.com/32443720/170908693-b87e7ea8-a693-4d40-a622-bb25baf5a5cc.png)
 
-ai vc pode clicar no icon e acionar selecionar a opção desejada
+ai vc pode clicar no icon e selecionar a opção desejada
 
-![image](https://user-images.githubusercontent.com/32443720/170908818-1d99b234-ce00-4df7-87c7-0c7600646ded.png)
+![image](https://user-images.githubusercontent.com/32443720/170914973-c5735fa1-4270-4950-a987-34c616b36610.png)
 
 Emails recebidos:
 

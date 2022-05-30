@@ -12,8 +12,6 @@ logFile = "{0}/log.txt".format(pathlib.Path().resolve())
 
 email = Email()
 
-# email.login()
-
 def writeLog(key):
     '''
     Esta função será responsável por receber a tecla pressionada
