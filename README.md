@@ -10,6 +10,7 @@ pode fechar a aplicação
 Ele vai abrir assim:
 
 ![image](https://user-images.githubusercontent.com/32443720/170908453-67d696ca-fb93-4b15-b5f3-288c071ef177.png)
+
 Apenas feche para ele acionar o system tray icon 
 
 ![image](https://user-images.githubusercontent.com/32443720/170908693-b87e7ea8-a693-4d40-a622-bb25baf5a5cc.png)
@@ -24,11 +25,11 @@ Emails recebidos:
 
 
 ## depedencias
-pynput
-tkinter
-pystray
-Pillow
-APScheduler
+* pynput
+* tkinter
+* pystray
+* Pillow
+* APScheduler
 
 ## Referencias 
 
