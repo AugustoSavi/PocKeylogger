@@ -1,8 +1,24 @@
-# Keylogger
+<h1 align="center">Keylogger and ScreenLogger</h1>
 
 
-## Como Usar
-Renomeio o arquivo .env_copy para .env  e adicione as informações faltantes(vc tbm pode alterar o server smtp)
+<h2 align="center">Como usar</h2>
+
+## - Instalar requirements
+```bash
+pip3 install -r requirements.txt 
+```
+
+## - Renomeio o arquivo .env_copy para .env  e adicione as informações faltantes(você também pode alterar o server smtp)
+
+
+## - Start
+
+```bash
+python3 main.py
+```
+
+
+<h2 align="center">Showcase</h2>
 
 A aplicação vai ficar rodando um system tray icon
 
@@ -16,15 +32,7 @@ Emails recebidos:
 
 ![image](https://user-images.githubusercontent.com/32443720/170909030-b01429ad-ce6a-4413-aca6-21f20280874a.png)
 
-
-## depedencias
-* pynput
-* tkinter
-* pystray
-* Pillow
-* APScheduler
-
-## Referencias 
+<h2 align="center">Referências</h2>
 
 https://www.vivaolinux.com.br/artigo/Como-criar-um-keylogger-em-Python?pagina=2
 
